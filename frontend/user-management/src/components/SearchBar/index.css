@@ -1,0 +1,42 @@
+.search-card{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 420px;
+    height: 48px;
+    padding: 0 16px;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.search-card:hover{
+    border-color: #2563eb;
+}
+
+.search-card:focus-within{
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.search-card svg{
+    font-size: 18px;
+    color: #6b7280;
+    flex-shrink: 0;
+}
+
+.input-box{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+    color: #1f2937;
+}
+
+.input-box::placeholder{
+    color: #9ca3af;
+}

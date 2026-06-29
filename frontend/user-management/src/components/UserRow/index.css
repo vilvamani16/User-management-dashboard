@@ -1,0 +1,92 @@
+.user-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.user-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.user-table-container th {
+    background: #f8fafc;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px;
+    text-align: left;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.user-table-container td {
+    padding: 16px;
+    font-size: 14px;
+    color: #4b5563;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+.user-table-container tbody tr {
+    transition: background 0.3s ease;
+}
+
+.user-table-container tbody tr:hover {
+    background: #f9fafb;
+}
+
+.user-table-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.edit-btn,
+.delete-btn {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background: #e0f2fe;
+    color: #0284c7;
+    margin-right: 10px;
+}
+
+.edit-btn:hover {
+    background: #0284c7;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(2, 132, 199, 0.3);
+}
+
+.delete-btn {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(220, 38, 38, 0.3);
+}
+
+.edit-btn:active,
+.delete-btn:active {
+    transform: scale(0.95);
+}
+
+.edit-btn svg,
+.delete-btn svg {
+    font-size: 17px;
+}
